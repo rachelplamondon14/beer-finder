@@ -1,8 +1,14 @@
 import React from 'react'
+import BeerCategoryBox from '../BeerCategoryBox'
+
+//Styles
+import './style.css'
 
 const BeersList = () => (
   <div id="beers-list">
-    BeersList HERE
+    <BeerCategoryBox type="ale" />
+    <BeerCategoryBox type="red-ale" />
+    <BeerCategoryBox type="stout" />
   </div>
 )
 

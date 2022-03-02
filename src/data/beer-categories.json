@@ -1,0 +1,14 @@
+{
+	"ale": {
+		"title": "Ales",
+		"image": "ale.jpg"
+	},
+	"red-ale": {
+		"title": "Red Ales",
+		"image": "red-ale.jpg"
+	},
+	"stout": {
+		"title": "Stouts",
+		"image": "stout.jpg"
+	}
+}
