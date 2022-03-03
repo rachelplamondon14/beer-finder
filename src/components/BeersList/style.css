@@ -2,4 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	background: #231702;
+	color: white;
+	min-height: 20vh;
 }

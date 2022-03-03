@@ -1,4 +1,9 @@
 import React from 'react'
+
+//Styles
+import './style.css'
+
+//Images
 import SearchIcon from './search-icon.svg'
 
 const Search = () => (

@@ -10,8 +10,10 @@ import Tagline from '../Tagline'
 
 const Header = () => (
   <header>
-    <Logo />
-    <Tagline />
+    <div className="center">
+      <Logo />
+      <Tagline />
+    </div>
     <Search />
   </header>
 )

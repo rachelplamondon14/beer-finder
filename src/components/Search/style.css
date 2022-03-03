@@ -1,0 +1,32 @@
+#search-bar {
+	width: 96%;
+  padding: 2%;
+	margin: auto 0 0;
+	max-width: 1000px;
+}
+
+.search-input-wrapper {
+	background-color: #94620a;
+	border-radius: 20px;
+	border: 2px solid #714b09;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+input {
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	padding: .5em 1em;
+	color: #2e1e04;
+}
+input:focus {
+	outline: 0;
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+	color: #2e1e04;
+}
