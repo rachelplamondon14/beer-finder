@@ -1,0 +1,15 @@
+header {
+	height: 80vh;
+	background-color: #ce8904;
+	border-bottom: 5px solid #94620a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+img.logo {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+}
