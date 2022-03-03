@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Hooks
-import useGetBeer from "../../hooks/useGetBeer";
+import useGetBeer from '../../hooks/useGetBeer'
 
 //Styles
 import './style.css'

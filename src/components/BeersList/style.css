@@ -1,8 +1,14 @@
 #beers-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	background: #231702;
+	background: black;
 	color: white;
 	min-height: 20vh;
+	padding: 3em 0;
+}
+#beers-list .container {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+  justify-items: center;
+	max-width: 1000px;
+	margin: 0 auto;
 }

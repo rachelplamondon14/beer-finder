@@ -12,10 +12,15 @@ export default function useGetBeer(type) {
   const getBeer = (type) => {
 		const thisBeer = data[type]
 
-		setBeer({
-			image: thisBeer.image,
-			title: thisBeer.title,
-		})
+		//Get image from assets directory
+		import(`../assets/${thisBeer.image}`)
+			.then(image => {
+				setBeer({
+					image: image.default,
+					title: thisBeer.title,
+				})
+			})
+
   }
 
 	useEffect(() => {
