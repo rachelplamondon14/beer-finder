@@ -11,7 +11,7 @@ const Search = () => (
 		<form name="search" method="GET">
 			<div className="search-input-wrapper">
 				<input type="search" name="search" value="" />
-				<button type="submit"><img src={SearchIcon} /></button>
+				<button type="submit"><img src={SearchIcon} alt="Search" /></button>
 			</div>
 		</form>
 	</div>
