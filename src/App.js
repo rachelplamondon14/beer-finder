@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 //Components
 import Header from './components/Header'
-import BeersList from './components/BeersList'
 
 //Routes
+import BeersList from './routes/BeersList'
 import BeerBrowser from './routes/BeerBrowser'
 
 //Styles

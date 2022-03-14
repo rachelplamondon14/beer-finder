@@ -1,5 +1,5 @@
 import React from 'react'
-import BeerCategoryBox from '../BeerCategoryBox'
+import BeerCategoryBox from '../../components/BeerCategoryBox'
 
 //Styles
 import './style.css'

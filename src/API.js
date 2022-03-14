@@ -2,11 +2,10 @@ import {
   BASE_API_URL
 } from './config'
 
-const apiFunctions = {
-	fetchAles: async() => {
-		//Get all ales from API
-		console.log(`${BASE_API_URL}/ales`)
+export default {
+	fetchBeers: async(beerStyle) => {
+		//Get all beers from API endpoint
+		const endpoint = `${BASE_API_URL}/${beerStyle}`
+    return await (await fetch(endpoint)).json();
 	}
 }
-
-export default apiFunctions
