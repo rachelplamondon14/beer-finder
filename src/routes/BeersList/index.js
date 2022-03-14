@@ -7,9 +7,9 @@ import './style.css'
 const BeersList = () => (
   <div id="beers-list">
     <div className="container">
-      <BeerCategoryBox type="ale" />
-      <BeerCategoryBox type="red-ale" />
-      <BeerCategoryBox type="stout" />
+      <BeerCategoryBox style="ale" />
+      <BeerCategoryBox style="red-ale" />
+      <BeerCategoryBox style="stout" />
     </div>
   </div>
 )

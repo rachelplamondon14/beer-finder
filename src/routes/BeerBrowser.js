@@ -8,11 +8,11 @@ import { useBeersFetch } from '../hooks/useBeersFetch'
 import SingleBeerBox from '../components/SingleBeerBox'
 
 const BeerBrowser = () => {
-	const { beerStyle } = useParams()
+	const { style } = useParams()
 
 	const {
     state
-  } = useBeersFetch(beerStyle);
+  } = useBeersFetch(style);
 
 	console.log('state:', state.results)
 

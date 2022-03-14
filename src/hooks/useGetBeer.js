@@ -3,15 +3,15 @@ import { React, useState, useEffect, } from 'react'
 //Beer Category Data
 import data from '../data/beer-categories.json'
 
-export default function useGetBeer(type) {
+export default function useGetBeer(style) {
 	const [beer, setBeer] = useState({
 		image: null,
 		title: null,
 		link: null,
 	})
 
-  const getBeer = (type) => {
-		const thisBeer = data[type]
+  const getBeer = (style) => {
+		const thisBeer = data[style]
 
 		//Get image from assets directory
 		import(`../assets/${thisBeer.image}`)
@@ -26,7 +26,7 @@ export default function useGetBeer(type) {
   }
 
 	useEffect(() => {
-    getBeer(type)
+    getBeer(style)
   }, []);
 
 	return beer;

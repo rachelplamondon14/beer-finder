@@ -7,8 +7,8 @@ import useGetBeer from '../../hooks/useGetBeer'
 //Styles
 import './style.css'
 
-const BeerCategoryBox = ({type}) => {
-  const beer = useGetBeer(type)
+const BeerCategoryBox = ({style}) => {
+  const beer = useGetBeer(style)
 
   return (
     <div className="beer-category-box">

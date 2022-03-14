@@ -6,7 +6,7 @@ import API from '../API';
 // Helpers
 import { isPersistedState } from '../helpers';
 
-export const useBeersFetch = beerStyle => {
+export const useBeersFetch = style => {
   const [state, setState] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -17,7 +17,7 @@ export const useBeersFetch = beerStyle => {
         setLoading(true);
         setError(false);
 
-        const beers = await API.fetchBeers(beerStyle)
+        const beers = await API.fetchBeers(style)
 
         setState({
           results: beers
@@ -29,7 +29,7 @@ export const useBeersFetch = beerStyle => {
       }
     };
 
-    const sessionState = isPersistedState(beerStyle);
+    const sessionState = isPersistedState(style);
 
     if (sessionState) {
       setState(sessionState);
@@ -38,12 +38,12 @@ export const useBeersFetch = beerStyle => {
     }
 
     fetchBeers();
-  }, [beerStyle]);
+  }, [style]);
 
   // Write to sessionStorage
   useEffect(() => {
-    sessionStorage.setItem(beerStyle, JSON.stringify(state));
-  }, [beerStyle, state]);
+    sessionStorage.setItem(style, JSON.stringify(state));
+  }, [style, state]);
 
   return { state, loading, error };
 };

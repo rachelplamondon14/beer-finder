@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<BeersList />} />
-          <Route path="/:beerStyle" element={<BeerBrowser />} />
+          <Route path="/:style" element={<BeerBrowser />} />
         </Routes>
       </BrowserRouter>
     </div>

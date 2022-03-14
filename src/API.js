@@ -3,9 +3,9 @@ import {
 } from './config'
 
 export default {
-	fetchBeers: async(beerStyle) => {
+	fetchBeers: async(style) => {
 		//Get all beers from API endpoint
-		const endpoint = `${BASE_API_URL}/${beerStyle}`
+		const endpoint = `${BASE_API_URL}/${style}`
     return await (await fetch(endpoint)).json();
 	}
 }
