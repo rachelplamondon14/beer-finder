@@ -1,14 +1,17 @@
 {
 	"ale": {
 		"title": "Ales",
-		"image": "ale.jpg"
+		"image": "ale.jpg",
+		"link": "/ale"
 	},
 	"red-ale": {
 		"title": "Red Ales",
-		"image": "red-ale.jpg"
+		"image": "red-ale.jpg",
+		"link": "/red-ale"
 	},
 	"stout": {
 		"title": "Stouts",
-		"image": "stout.jpg"
+		"image": "stout.jpg",
+		"link": "/stouts"
 	}
 }

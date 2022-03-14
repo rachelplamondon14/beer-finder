@@ -4,6 +4,9 @@
 	text-transform: uppercase;
 	font-weight: 600;
 }
+.beer-category-box a {
+	text-decoration: none;
+}
 
 figure {
 	transition: all .2s ease-in-out;

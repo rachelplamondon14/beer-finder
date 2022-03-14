@@ -7,6 +7,7 @@ export default function useGetBeer(type) {
 	const [beer, setBeer] = useState({
 		image: null,
 		title: null,
+		link: null,
 	})
 
   const getBeer = (type) => {
@@ -18,6 +19,7 @@ export default function useGetBeer(type) {
 				setBeer({
 					image: image.default,
 					title: thisBeer.title,
+					link: thisBeer.link
 				})
 			})
 

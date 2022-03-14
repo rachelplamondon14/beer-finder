@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 //Hooks
 import useGetBeer from '../../hooks/useGetBeer'
@@ -12,8 +13,10 @@ const BeerCategoryBox = ({type}) => {
   return (
     <div className="beer-category-box">
       <figure>
-        <img src={beer.image} alt={`View ${beer.title}`} />
-        <figcaption>{beer.title}</figcaption>
+       <Link to={`${beer.link}`}>
+          <img src={beer.image} alt={`View ${beer.title}`} />
+          <figcaption>{beer.title}</figcaption>
+        </Link>
       </figure>
     </div>
   )
