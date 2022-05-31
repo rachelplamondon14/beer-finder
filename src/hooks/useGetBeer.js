@@ -1,4 +1,4 @@
-import { React, useState, useEffect, } from 'react'
+import { useState, useEffect, } from 'react'
 
 //Beer Category Data
 import data from '../data/beer-categories.json'
@@ -27,7 +27,7 @@ export default function useGetBeer(style) {
 
 	useEffect(() => {
     getBeer(style)
-  }, []);
+  }, [style]);
 
 	return beer;
 }

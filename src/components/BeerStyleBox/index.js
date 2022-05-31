@@ -7,11 +7,11 @@ import useGetBeer from '../../hooks/useGetBeer'
 //Styles
 import './style.css'
 
-const BeerCategoryBox = ({style}) => {
-  const beer = useGetBeer(style)
+const BeerStyleBox = ({beerStyle}) => {
+  const beer = useGetBeer(beerStyle)
 
   return (
-    <div className="beer-category-box">
+    <div className="beer-style-box">
       <figure>
        <Link to={`${beer.link}`}>
           <img src={beer.image} alt={`View ${beer.title}`} />
@@ -22,4 +22,4 @@ const BeerCategoryBox = ({style}) => {
   )
 }
 
-export default BeerCategoryBox
+export default BeerStyleBox

@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Components
-import BeerCategoryBox from '../../components/BeerCategoryBox'
+import BeerStyleBox from '../../components/BeerStyleBox'
 
 //Styles
 import './style.css'
@@ -9,9 +9,9 @@ import './style.css'
 const BeersList = () => (
   <div id="beers-list">
     <div className="container">
-      <BeerCategoryBox style="ale" />
-      <BeerCategoryBox style="red-ale" />
-      <BeerCategoryBox style="stout" />
+      <BeerStyleBox beerStyle="ale" />
+      <BeerStyleBox beerStyle="red-ale" />
+      <BeerStyleBox beerStyle="stout" />
     </div>
   </div>
 )

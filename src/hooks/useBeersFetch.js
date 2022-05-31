@@ -36,7 +36,7 @@ export const useBeersFetch = style => {
 
     fetchBeers();
     
-  }, []);
+  }, [style]);
 
   // Write to sessionStorage
   useEffect(() => {

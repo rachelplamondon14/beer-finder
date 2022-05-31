@@ -1,20 +1,20 @@
-.beer-category-box {
+.beer-style-box {
 	max-width: 200px;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	font-weight: 600;
 	text-align: center;
 }
-.beer-category-box a {
+.beer-style-box a {
 	text-decoration: none;
 }
 
-.beer-category-box figure {
+.beer-style-box figure {
 	margin: 0;
 }
-.beer-category-box figure a {
+.beer-style-box figure a {
 	display: block;
 	transition: all .2s ease-in-out;
-} .beer-category-box figure a:hover {
+} .beer-style-box figure a:hover {
 	margin-top: -.8em;
 }

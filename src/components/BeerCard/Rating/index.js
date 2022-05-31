@@ -10,7 +10,7 @@ const Rating = ({average, reviews}) => {
 	const starsCount = Math.round(average)
 	let stars = []
 	for (let i = 0; i < starsCount; i++) {
-		stars.push(<li class="star"><Star /></li>)
+		stars.push(<li className="star"><Star /></li>)
 	}
 
 	return (
