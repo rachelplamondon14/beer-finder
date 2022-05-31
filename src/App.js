@@ -8,8 +8,7 @@ import Header from './components/Header'
 import BeersList from './routes/BeersList'
 import BeerBrowser from './routes/BeerBrowser'
 
-//Styles
-import './App.css';
+//todo: add this <Route path='/*' element={<NotFound />} />
 
 function App() {
   return (

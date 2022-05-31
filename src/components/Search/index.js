@@ -10,7 +10,7 @@ const Search = () => (
   <div id="search-bar">
 		<form name="search" method="GET">
 			<div className="search-input-wrapper">
-				<input type="search" name="search" value="" />
+				<input type="search" name="search" value="" onChange={() => {}} />
 				<button type="submit"><img src={SearchIcon} alt="Search" /></button>
 			</div>
 		</form>

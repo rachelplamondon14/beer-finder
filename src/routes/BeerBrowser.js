@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 import { useBeersFetch } from '../hooks/useBeersFetch'
 
 //Components
-import SingleBeerBox from '../components/SingleBeerBox'
+import BeerCard from '../components/BeerCard'
 
 const BeerBrowser = () => {
 	const { style } = useParams()
@@ -14,16 +14,15 @@ const BeerBrowser = () => {
     state
   } = useBeersFetch(style);
 
-	console.log('state:', state.results)
-
 	return (
 		<div id="beers-list">
 			<div className="container">
-				{state.results ? (state.results.map(beer => (
-					<SingleBeerBox
+				{state ? (state.map(beer => (
+					<BeerCard
 						key={beer.id}
+						name={beer.name}
 						image={beer.image}
-						beerId={beer.id}
+						rating={beer.rating}
 					/>
 				)))
 				: <div>Loading...</div>}

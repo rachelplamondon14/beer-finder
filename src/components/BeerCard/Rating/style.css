@@ -1,0 +1,27 @@
+.rating {
+	display: flex;
+	justify-content: center;
+}
+
+.rating ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.rating ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.rating ul li svg {
+	fill: #a98e31;
+	width: 1em;
+	height: 1em;
+}
+
+.rating span.reviews {
+	margin-left: 0.4em;
+}

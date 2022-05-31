@@ -1,4 +1,6 @@
 import React from 'react'
+
+//Components
 import BeerCategoryBox from '../../components/BeerCategoryBox'
 
 //Styles

@@ -7,8 +7,7 @@
 #beers-list .container {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
-	align-items: center;
-  justify-items: center;
+	grid-gap: 10px;
 	max-width: 1000px;
 	margin: 0 auto;
 }
